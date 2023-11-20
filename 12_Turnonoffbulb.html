@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Bulb-TurnON/TurnOFF</title>
+  </head>
+  <body>
+    <img id="Light-bulb" src="bulb_off.jpg" alt="bulb_off">
+    <button id="off-bulb">OFF</button>
+    <button id="on-bulb">ON</button>
+    <script>
+      const offBulbButton = document.getElementById('off-bulb');
+      const onBulbButton = document.getElementById('on-bulb');
+      const lightBulbImage = document.getElementById('Light-bulb');
+
+      onBulbButton.addEventListener('click', () => {
+        lightBulbImage.src = "bulb_on.jpg";
+      });
+
+      offBulbButton.addEventListener('click', () => {
+        lightBulbImage.src = "bulb_off.jpg";
+      });
+    </script>
+  </body>
+</html>
