@@ -1,0 +1,12 @@
+<html>
+  <title>OnClickEvent</title>
+  <body>
+  <button id="bgclrchng">CHANGE BACKGROUND COLOR</button>
+  <script>
+  const button = document.getElementById('bgclrchng');
+  const body = document.body;
+  button.addEventListener('click',() =>{body.style.backgroundColor = 'red';});
+  button.addEventListener('dblclick',() =>{body.style.backgroundColor = 'green';});
+  </script>
+  </body>
+</html>
